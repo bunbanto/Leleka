@@ -1,0 +1,8 @@
+.diaryContainer {
+  display: grid;
+  margin-top: 16px;
+  @media screen and (width >= 1440px) {
+    grid-template-columns: 1fr 2fr;
+    gap: 32px;
+  }
+}

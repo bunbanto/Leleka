@@ -1,0 +1,303 @@
+
+.profileAvatar {
+    margin-bottom: 12px;
+}
+.userName {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    /* color: #000; */
+} 
+ .userEmail {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    /* color: #000; */
+} 
+.loadButton {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.6;
+    /* color: #000; */
+    border-bottom: 4px solid rgba(0, 0, 0, 0.15);
+    border-radius: 100px;
+    padding: 8px 89.5px;
+    width: 335px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.05);
+    margin-top: 16px;
+}
+.user {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    /* color: #000; */
+}
+.inputUser {
+    display: flex;
+    border: 2px solid rgba(255, 255, 255, 0);
+    border-radius: 12px;
+    padding: 8px 12px;
+    width: 335px;
+    height: 37px;
+    background: rgba(0, 0, 0, 0.05);
+    margin-bottom: 24px !important;
+    margin-top: 8px !important;
+    padding-left: 12px !important;
+    outline: none;
+}
+.inputUser::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.6);
+}
+.inputUser.inputError {
+    border: 2px solid #ffcbd3;
+    color: #c60000;
+}
+.inputUser:focus-visible {
+    border: 2px solid #ffcbd3;
+}
+.inputUser.inputError:focus-visible {
+    border: 2px solid #ffcbd3 ;
+}
+.inputUser[type = "email"]::placeholder {
+    opacity: 0.6;
+}
+.inputError::placeholder {
+    color: #c60000;
+}
+.errorText {
+    color: #c60000;
+    font-size: 12px;
+    margin-top: -16px;
+    margin-bottom: 8px;
+    display: block;
+}
+.iconProfile {
+    width: 12px;
+    height: 8px;
+    position: absolute;
+    top: 60%;
+    left: 300px;
+    transform: translateY(50%);
+}
+.dateOption {
+    position: relative;
+}
+.iconGender {
+    width: 12px;
+    height: 8px;
+    position: absolute;
+    top: 60%;
+    left: 300px;
+    transform: translateY(50%);
+}
+.genderOption {
+    position: relative;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    -webkit-appearance: none;
+    appearance: none;
+    display: none;
+}
+.inputSelection {
+    display: flex;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 12px;
+    padding: 8px 12px;
+    width: 335px;
+    height: 100%;
+    background: #f2f2f2;
+    margin-bottom: 24px;
+    margin-top: 8px;
+    appearance: none;
+                
+}
+.buttons {
+    margin-top: 24px;
+    display: flex;
+    gap: 16px;
+}
+
+.firstButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.15);
+    border-radius: 100px;
+    padding: 8px 20px;
+    width: 159.5px;
+    height: 38px;
+    background: rgba(0, 0, 0, 0.05);
+    margin-top: 24px;
+}
+.textButton {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #000;
+}
+.firstButton:active {
+    border:  rgba(0, 0, 0, 0.15);
+    background:  rgba(0, 0, 0, 0.15);
+}
+.firstButton:disabled {
+    background: rgba(0, 0, 0, 0.05);
+    opacity: 0.3;
+}
+.firstButton:hover:focus {
+    border-bottom: 4px solid rgba(0, 0, 0, 0.15);
+    border-radius: 100px;
+    padding: 10px 24px;
+    background: #fff;
+    border-top: #fff;
+    border-left: #fff;
+    border-right: #fff;
+}
+.lastButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border: 4px solid #ffdae0;
+    border-bottom: 4px solid #ffcbd3;
+    border-radius: 100px;
+    padding: 8px 20px;
+    width: 159.5px;
+    height: 38px;
+    background: #ffdae0;
+    margin-top: 24px;
+}
+.lastButton:active {
+    border:  #ffcbd3;
+    background: #ffcbd3;
+}
+.lastButton:disabled {
+    background: #ffdae0;
+    opacity: 0.3;
+}
+.lastButton:hover:focus {
+    border-bottom: 4px solid rgba(0, 0, 0, 0.15);
+    border-radius: 100px;
+    padding: 10px 24px;
+    background: #fff4f6;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.15);
+    border-top: #fff4f6;
+    border-left: #fff4f6;
+    border-right: #fff4f6;
+        
+}
+
+@media screen and (min-width: 768px) {
+    .avatarContainer {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        row-gap: 12px;
+    }
+    .avatarContainerText{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding-left: 12px;
+        padding-top: 14.5px;
+        padding-bottom: 14.5px;
+    }
+    .loadButton {
+        margin-top: 16px;
+    }
+    .inputUser {
+        width: 704px;
+        height: 37px;
+   }
+   .inputSelection {
+        width: 704px;
+        height: 37px;
+   }
+   .iconGender {
+        left: 660px;
+   }
+   .iconProfile {
+        left: 660px;
+   }
+    .firstButton {
+        width: 150px;
+        margin-left: 403px;
+       
+   }
+   .lastButton {
+        width: 135px;
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .avatarContainerText {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    .loadButton {
+        font-size: 16px;
+        width: 218px;
+        height: 42px;
+        padding: 8px 20px;
+    }
+    .iconGender {
+        left: 550px;
+    }
+    .iconProfile {
+        left: 550px;
+    }
+     /* .loadButton {
+        width: 218px;
+        height: 42px;
+    } */
+    .inputUser {
+        width: 580px;
+        height: 40px;
+        display: flex;
+    }
+    .inputSelection {
+        width: 580px;
+        height: 40px;
+    }
+    .inputWrapper {
+        width: 580px;
+        height: 48px;
+    }
+    .textButton {
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 1.6;
+        color: #000;
+    }
+    .input {
+        border: 2px solid rgba(255, 255, 255, 0);
+        background: rgba(0, 0, 0, 0.05);
+        border-radius: 12px;
+        padding: 8px 12px;
+        width: 300px;
+        height: 20px;
+        margin-bottom: 24px;
+        margin-top: 8px;
+    }
+    /* button {
+        margin-right: 505px;
+    } */
+    .firstButton {
+        width: 165px;
+        height: 42px;
+        margin-left: 250px;   
+    }
+
+    .lastButton {
+        width: 149px;
+        height: 42px;
+    } 
+}

@@ -1,0 +1,150 @@
+@import url('./normalize.css');
+@import url('./fonts.css');
+@import url('./root.css');
+
+/* BASE */
+
+html {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+  height: 100%;
+
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 375px;
+  font-family: var(--font-family);
+
+  position: relative;
+
+  display: flex;
+
+  flex-direction: column;
+
+  flex: 1;
+
+  background-color: var(--color-scheme-background);
+
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5;
+
+  color: var(--color-scheme-text);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+}
+
+.main {
+  padding: 0px 20px 20px;
+}
+
+b {
+  display: block;
+}
+
+span {
+  display: inline-block;
+}
+
+section {
+  max-width: 100%;
+
+  overflow: hidden;
+  overflow-y: auto;
+
+  flex: 1;
+}
+
+.loader,
+.error {
+  text-align: center;
+  position: absolute;
+
+  top: 20%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  padding: 16px 20px;
+
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 1439.98px) {
+  body {
+    overflow: hidden;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .container {
+    padding: 24px 16px;
+  }
+  main {
+    overflow: hidden;
+  }
+
+  .main {
+    padding: 24px 32px;
+  }
+}
+
+@media screen and (min-width: 767.98px) {
+  body {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    max-width: 1440px;
+  }
+}
+
+/* MUI */
+
+/* .css-lqwr9g-MuiPickersOutlinedInput-notchedOutline {
+  border-color: transparent !important;
+
+  background: var(--opacity-neutral-darkest-5) !important;
+}
+
+.css-vycme6-MuiPickersInputBase-root-MuiPickersOutlinedInput-root {
+  border-radius: 12px !important;
+  color: var(--color-neutral) !important;
+}
+
+.css-vycme6-MuiPickersInputBase-root-MuiPickersOutlinedInput-root {
+  padding-left: 3px !important;
+  padding-right: 9px !important;
+}
+
+.css-1fb7els-MuiPickersSectionList-root-MuiPickersInputBase-sectionsContainer-MuiPickersOutlinedInput-sectionsContainer,
+.css-1y4gq5a-MuiPickersSectionList-root-MuiPickersInputBase-sectionsContainer-MuiPickersOutlinedInput-sectionsContainer {
+  padding: 9.5px !important;
+}
+*/
+
+.MuiPickersOutlinedInput-notchedOutline {
+  border-style: none !important;
+  border-width: 1px !important;
+  border-color: transparent !important;
+}

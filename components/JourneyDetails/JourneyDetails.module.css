@@ -1,0 +1,240 @@
+.container {
+  margin-top: 26px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.tabContainer {
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid var(--opacity-transparent);
+  border-radius: 100px;
+  padding: 4px;
+  background-color: var(--color-scheme-foreground);
+
+  display: flex;
+  flex-direction: row;
+
+  flex-wrap: nowrap;
+}
+
+.tab {
+  width: 100%;
+  border: 1px solid var(--opacity-transparent);
+  border-radius: 100px;
+  padding: 10px 24px;
+  background-color: var(--opacity-transparent);
+
+  text-align: center;
+
+  text-wrap: nowrap;
+}
+
+.tab.active {
+  background-color: var(--color-scheme-foreground-alt);
+  line-height: 160%;
+  font-weight: 500;
+}
+
+.babyContainer {
+  padding: 24px;
+
+  background-color: var(--color-scheme-foreground);
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  gap: 32px;
+  border-radius: 32px;
+}
+
+.babySize {
+  width: 100%;
+  height: 379px;
+}
+
+.imageContainer {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.image {
+  border: 1px solid var(--color-scheme-border);
+
+  border-radius: 24px;
+
+  margin-bottom: 16px;
+}
+
+.aboutBaby {
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+.fact {
+  height: 124px;
+
+  overflow-y: auto;
+
+  border-radius: 12px;
+  padding: 12px;
+  background-color: var(--color-scheme-foreground-alt);
+}
+
+.titleContainer {
+  display: flex;
+  margin-bottom: 8px;
+  gap: 8px;
+}
+
+.title {
+  font-weight: 700;
+}
+
+.momTabsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.momWrapper {
+  display: flex;
+  flex-direction: column;
+
+  gap: 24px;
+}
+
+.momContainer {
+  max-width: 704px;
+
+  border-radius: 32px;
+  background-color: var(--color-scheme-foreground);
+  padding: 24px;
+}
+
+.momTitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+  margin-bottom: 8px;
+}
+
+.feelings {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 160%;
+}
+
+.feeling {
+  border: 1px solid var(--opacity-transparent);
+  border-radius: 100px;
+  padding: 4px 10px;
+  background-color: var(--opacity-neutral-darkest-5);
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.comfortTip {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.comfortTip:last-child {
+  margin-bottom: 0;
+}
+
+.category {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 160%;
+}
+
+@media screen and (min-width: 768px) {
+  .tabContainer {
+    max-width: 572px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    font-size: 16px;
+  }
+
+  .tab {
+    padding: 10px 82px;
+  }
+
+  .tabContainer {
+    width: 572px;
+  }
+
+  .babyContainer {
+    max-height: 505px;
+    height: 100%;
+    flex-direction: row;
+  }
+
+  .imageContainer {
+    width: 461px;
+  }
+
+  .babySize {
+    max-width: 461px;
+  }
+
+  .aboutBaby {
+    height: 280px;
+    overflow: auto;
+    scrollbar-width: none;
+  }
+
+  .aboutBaby::-webkit-scrollbar {
+    display: none;
+  }
+
+  .text {
+    overflow: auto;
+    scrollbar-width: none;
+  }
+
+  .text::-webkit-scrollbar {
+    display: none;
+  }
+
+  .momContainer {
+    height: 194px;
+  }
+
+  .tip {
+    height: 322px;
+    margin-bottom: 0px;
+  }
+
+  .momTabsContainer {
+    flex-direction: row;
+  }
+
+  .momTitle {
+    font-size: 20px;
+  }
+
+  .feelings {
+    font-size: 14px;
+  }
+
+  .category {
+    font-size: 16px;
+  }
+}

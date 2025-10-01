@@ -1,0 +1,64 @@
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 16px;
+  background-color: var(--color-scheme-background);
+}
+
+.burgerButton {
+  border: none;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  max-height: 100dvh;
+  z-index: 1000;
+
+  position: fixed;
+
+  inset: 0;
+  background: var(--opacity-neutral-darkest-50);
+  opacity: 1;
+
+  transition: opacity 0.3s ease;
+}
+
+.menu {
+  position: relative;
+  z-index: 9998;
+
+  width: 300px;
+  height: 100dvh;
+
+  background-color: var(--color-scheme-background);
+  transform: translateX(-100%);
+
+  animation: slideIn 0.3s ease forwards;
+}
+
+.closing {
+  animation: slideOut 0.3s ease forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

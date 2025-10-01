@@ -1,0 +1,16 @@
+.form_content {
+  max-width: 580px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 24px;
+}
+
+.form_actions {
+  margin-top: 28;
+  display: flex;
+  gap: 16px;
+
+  justify-content: end;
+}
