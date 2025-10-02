@@ -2,7 +2,7 @@
 
 ## Pregnancy Journey App
 
-[![Live demo](https://img.shields.io/badge/Live%20demo-Leleka-ffd6e7?logo=vercel&labelColor=93c5fd&logoColor=111827)](https://gitpub-frontend.vercel.app/)
+[![Live demo](https://img.shields.io/badge/Live%20demo-Leleka-ffd6e7?logo=vercel&labelColor=93c5fd&logoColor=111827)](https://leleka-o0c79eipd-bunbantos-projects.vercel.app/)
 
 Лелека - це зручний застосунок для майбутніх мам. Він допомагає щодня стежити за
 перебігом вагітності, отримувати корисні поради, вести особистий щоденник та
@@ -68,7 +68,7 @@
 
 ## Backend
 
-[![Swagger UI](https://img.shields.io/badge/Docs-Swagger%20UI-85EA2D?logo=swagger&logoColor=white)](https://gitpub-backend-qq3d.onrender.com/api-docs/)
+[![Swagger UI](https://img.shields.io/badge/Docs-Swagger%20UI-85EA2D?logo=swagger&logoColor=white)](https://leleka-backend-0udd.onrender.com)
 
 - Node.js (ESM)
 - Express 5
@@ -169,5 +169,5 @@ npm run dev
 Адаптивна верстка реалізована згідно з макетом. Передбачено захист приватних
 сторінок (профіль, щоденник, подорож). Всі запити супроводжуються індикаторами
 завантаження та повідомленнями про помилки. Після реєстрації користувач
-проходить онбординг для введення початкових даних. Задеплоєний проєкт
-доступний за посиланням: [Переглянути сайт](https://gitpub-frontend.vercel.app/)
+проходить онбординг для введення початкових даних. Задеплоєний проєкт доступний
+за посиланням: [Переглянути сайт](https://gitpub-frontend.vercel.app/)

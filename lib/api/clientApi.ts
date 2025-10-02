@@ -114,8 +114,6 @@ export const checkSession = async () => {
     withCredentials: true,
   });
 
-  console.log('Session response:', res.data);
-
   return res;
 };
 

@@ -34,6 +34,7 @@
 
 @media screen and (min-width: 768px) {
   .statusBlockContainer {
+    justify-content: space-between;
     gap: 32px;
     margin-bottom: 32px;
   }

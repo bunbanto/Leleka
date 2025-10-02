@@ -2,7 +2,7 @@
 import { DiaryEntry } from '@/types/diary';
 import { useEmotionsStore } from '@/lib/store/emotionStore';
 import css from './DiaryEntryCard.module.css';
-import { useDragScroll } from '@/hooks/useDragScroll';
+// import { useDragScroll } from '@/hooks/useDragScroll';
 
 interface DiaryEntryCardProps {
   diaryEntry: DiaryEntry;
@@ -16,8 +16,8 @@ function DiaryEntryCard({ diaryEntry }: DiaryEntryCardProps) {
     .map(id => emotionMap.get(id))
     .filter(Boolean);
 
-  const { ref, onMouseDown, onMouseLeave, onMouseUp, onMouseMove } =
-    useDragScroll<HTMLUListElement>('horizontal');
+  // const { ref, onMouseDown, onMouseLeave, onMouseUp, onMouseMove } =
+  //   useDragScroll<HTMLUListElement>('horizontal');
 
   return (
     <>
@@ -33,12 +33,12 @@ function DiaryEntryCard({ diaryEntry }: DiaryEntryCardProps) {
       </div>
       <ul
         className={css.diaryItem_tagList}
-        ref={ref}
-        onMouseDown={onMouseDown}
-        onMouseLeave={onMouseLeave}
-        onMouseUp={onMouseUp}
-        onMouseMove={onMouseMove}
-        style={{ overflow: 'auto', cursor: 'grab', whiteSpace: 'nowrap' }}
+        // ref={ref}
+        // onMouseDown={onMouseDown}
+        // onMouseLeave={onMouseLeave}
+        // onMouseUp={onMouseUp}
+        // onMouseMove={onMouseMove}
+        // style={{ overflow: 'auto', whiteSpace: 'nowrap' }}
       >
         {emotionsTags.map((title, index) => {
           return (
