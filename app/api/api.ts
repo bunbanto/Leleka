@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export const api = axios.create({
-  baseURL: process.env.NEXT_PUBLIC_BEKEND_ORIGIN,
+  baseURL: process.env.NEXT_PUBLIC_BACKEND_ORIGIN,
   withCredentials: true,
 });
 
