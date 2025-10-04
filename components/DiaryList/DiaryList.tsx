@@ -39,7 +39,7 @@ function DiaryList({ diaryData }: DiaryListProps) {
         </Modal>
       )}
       {diaryData === undefined || diaryData?.length === 0 ? (
-        <p>Покищо у вас немає записів.</p>
+        <p>Поки що у вас немає записів.</p>
       ) : (
         <ul className={css.diaryList}>
           {diaryData.map(entry => (
