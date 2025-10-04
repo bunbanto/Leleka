@@ -169,13 +169,7 @@ function DiaryEntryDetails({ entryData }: DiaryEntryDetailsProps) {
   // ✅ якщо взагалі немає записів
   if (!diaries || diaries.length === 0) {
     return (
-      <div className={css.diary_noteWrapper}>
-        <div className={css.diary_noteHeader_titleBox}>
-          <h2 className={css.diary_noteList_title}>
-            Поки що у вас немає записів.
-          </h2>
-        </div>
-      </div>
+      <h2 className={css.diary_noteList_title}>Поки що у вас немає записів.</h2>
     );
   }
 

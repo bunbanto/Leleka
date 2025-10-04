@@ -38,6 +38,7 @@
   resize: none !important;
   padding-inline: 18px !important;
   background: var(--opacity-neutral-darkest-5) !important;
+  outline: none;
   &::placeholder {
     font-family: var(--font-family) !important;
     font-weight: 400 !important;
